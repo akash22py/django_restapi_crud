@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'restapi_crud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'akash',
-        'USER': 'postgres',
-        'PASSWORD' : 'Akash@8604',
-        'HOST': 'localhost',
+        'NAME': '<databasename>',
+        'USER': '<username>',
+        'PASSWORD' : '<password>',
+        'HOST': '<hostname>',
     }
 }
 
