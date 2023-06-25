@@ -1,0 +1,11 @@
+virtualenv env                          --create virtualenv
+.\env\Scripts\activate                  --activate virtualenv
+deactivate                              --deactivate virtualenv
+cat > requirements.txt                  --create a file requirements.txt
+pip install -r .\requirements.txt       --install libraries written in requirements.txt
+pip freeze > requirements.txt           --create and save all libraries installed into requirements.txt
+django-admin startproject firstproject  --creates django app boilerplate(with 'firstproject' as project name)
+python manage.py startapp calc          --cretes an app calc within the project
+python manage.py runserver              --run app server
+python manage.py migrate                --migrate the changes made in the project and creates a file migration.py if it doesn't exist in the app
+python manage.py makemigrations <appname> --migrate the changes in the app (a file in the migrations folder will be created)
